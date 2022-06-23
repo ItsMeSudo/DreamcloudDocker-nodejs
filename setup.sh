@@ -5,4 +5,4 @@ cd /root && \
     apt install unzip wget git curl -y && \
     cd /root/DreamcloudDocker-nodejs && \
     bash nodesetup.sh && \
-    apt install nodejs gcc g++ make
+    apt install nodejs gcc g++ make -y
