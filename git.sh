@@ -10,4 +10,4 @@ cd /root && \
 git clone $url && \
 mv /root/$filename/* /data
 echo "A repo sikeresen letöltve."
-bash
+/bin/bash

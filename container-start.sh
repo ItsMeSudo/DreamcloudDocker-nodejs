@@ -3,12 +3,12 @@
 
 normal_startup() {
     echo "A mappa nem üres, szerver indítás lehetséges."
-    bash
+    /bin/bash
 }
 
 emptystart() {
     echo "A mappa üres, szerver indítás NEM lehetséges."
-    bash
+    /bin/bash
 }
 
 if find /data -mindepth 1 -maxdepth 1 | read; then

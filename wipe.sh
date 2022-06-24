@@ -3,4 +3,4 @@
 
 rm -rf /data/* && \
 echo "A wipe művelet sikeresen lefutott." && \
-bash
+/bin/bash

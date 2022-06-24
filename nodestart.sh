@@ -3,4 +3,4 @@
 
 cd /data && \
 node index.js && \
-bash
+/bin/bash

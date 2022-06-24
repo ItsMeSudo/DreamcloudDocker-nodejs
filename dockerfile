@@ -15,5 +15,4 @@ RUN apt update -y && \
     cd DreamcloudDocker-nodejs && chmod +x * && \
     ./setup.sh
 
-CMD cd /root/DreamcloudDocker-nodejs && \
-    ./container-start.sh
+CMD cd /root/DreamcloudDocker-nodejs && ./container-start.sh; sleep infinity
