@@ -16,4 +16,4 @@ RUN apt update -y && \
     ./setup.sh
 
 CMD cd /root/DreamcloudDocker-nodejs && \
-    ./startup.sh
+    ./container-start.sh

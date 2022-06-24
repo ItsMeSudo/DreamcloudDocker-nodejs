@@ -2,14 +2,13 @@
 #SUDO                 2022              SERVERHU.EU
 
 normal_startup() {
-    echo "A mappa nem üres, szerver indítás folyamatban."
-        cd /data && \
-        node index.js
+    echo "A mappa nem üres, szerver indítás lehetséges."
+    bash
 }
 
 emptystart() {
-    echo "A mappa üres, kérlek adj hozzá github repot az indításhoz."
-    exit 0
+    echo "A mappa üres, szerver indítás NEM lehetséges."
+    bash
 }
 
 if find /data -mindepth 1 -maxdepth 1 | read; then
