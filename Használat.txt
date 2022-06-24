@@ -1,0 +1,16 @@
+git clone https://github.com/ItsMeSudo/DreamcloudDocker-nodejs.git && mkdir nodejs
+docker build . -t dreamclouddocker-nodejs --no-cache
+docker tag dreamclouddocker-nodejs:latest zud0/dreamclouddocker-nodejs:latest
+docker push zud0/dreamclouddocker-nodejs:latest
+
+docker container create --name nodejs -v /home/asd/nodejs:/data zud0/dreamclouddocker-nodejs
+docker container start nodejs
+docker logs nodejs -f
+
+docker exec -it nodejs /bin/bash
+DEMO: 
+
+docker exec -it nodejs /bin/bash /root/DreamcloudDocker-nodejs/git.sh https://github.com/ItsMeSudo/Dreamcloud-demo.git
+docker exec -it nodejs /bin/bash /root/DreamcloudDocker-nodejs/modules.sh figlet
+docker exec -it nodejs /bin/bash /root/DreamcloudDocker-nodejs/nodestart.sh
+docker exec -it nodejs /bin/bash /root/DreamcloudDocker-nodejs/wipe.sh
