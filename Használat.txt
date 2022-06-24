@@ -1,8 +1,4 @@
-git clone https://github.com/ItsMeSudo/DreamcloudDocker-nodejs.git && mkdir nodejs
-docker build . -t dreamclouddocker-nodejs --no-cache
-docker tag dreamclouddocker-nodejs:latest zud0/dreamclouddocker-nodejs:latest
-docker push zud0/dreamclouddocker-nodejs:latest
-
+docker pull zud0/dreamclouddocker-nodejs
 docker container create --name nodejs -v /home/asd/nodejs:/data zud0/dreamclouddocker-nodejs
 docker container start nodejs
 docker logs nodejs -f
