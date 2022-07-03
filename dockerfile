@@ -1,5 +1,6 @@
 #DreamCloud Dockerfile nodejs-git szerver
 #SUDO              2022            SERVERHU.EU
+# /usr/bin
 
 FROM ubuntu:20.04
 VOLUME ["/data"]
@@ -15,4 +16,4 @@ RUN apt update -y && \
     cd DreamcloudDocker-nodejs && chmod +x * && \
     ./setup.sh
 
-CMD cd /root/DreamcloudDocker-nodejs && ./container-start.sh; sleep infinity
+CMD container-start; sleep infinity
