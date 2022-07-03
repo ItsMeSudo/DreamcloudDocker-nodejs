@@ -1,4 +1,4 @@
-#JourneyHosting Dockerfile Minecraft szerver
+#DreamCloud Dockerfile nodejs-git szerver
 #SUDO                 2022              SERVERHU.EU
 
 FROM ubuntu:20.04
