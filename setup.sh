@@ -9,4 +9,4 @@ cd /root && \
     mv /root/DreamcloudDocker-nodejs/gitclone /usr/bin/ && \
     mv /root/DreamcloudDocker-nodejs/container-start /usr/bin/ && \
     mv /root/DreamcloudDocker-nodejs/modules-i /usr/bin/ && \
-    mv /root/DreamcloudDocker-nodejs/nodestart /usr/bin/ && \
+    mv /root/DreamcloudDocker-nodejs/nodestart /usr/bin/
