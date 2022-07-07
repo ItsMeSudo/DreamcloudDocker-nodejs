@@ -2,4 +2,4 @@
 #SUDO                 2022              SERVERHU.EU
 
 token=$1
-echo "TOKEN=$1" >> /data/.env
+echo "TOKEN=$token" >> /data/.env
