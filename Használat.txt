@@ -8,4 +8,5 @@ DEMO:
 
 docker exec -it nodejs /bin/bash gitclone https://github.com/ItsMeSudo/Dreamcloud-demo.git
 docker exec -it nodejs /bin/bash modules-i figlet
+docker exec -it nodejs /bin/bash setservertoken TOKEN
 docker exec -it nodejs /bin/bash nodestart
