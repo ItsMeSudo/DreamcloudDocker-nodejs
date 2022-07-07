@@ -1,5 +1,4 @@
 #!/bin/bash
 #SUDO                 2022              SERVERHU.EU
 
-token=$1
-echo "TOKEN=$token" >> /data/.env
+echo "TOKEN=$1" >> /data/.env
