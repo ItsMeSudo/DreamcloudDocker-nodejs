@@ -21,8 +21,8 @@ cd /root && \
 git clone $url && \
 mv /root/$filename/* /data
 echo "A repo sikeresen letöltve."
-/bin/bash
 }
 
 wipe
 clone
+echo "true"

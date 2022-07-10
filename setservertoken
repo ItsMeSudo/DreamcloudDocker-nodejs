@@ -12,7 +12,9 @@ if [ -f "$FILE" ]; then
     getoldenv
     rm -rf /root/.env
     echo "TOKEN=$1" >> /data/.env
+    echo "true"
 else
     rm -rf /root/.env
     echo "TOKEN=$1" >> /data/.env
+    echo "true"
 fi
