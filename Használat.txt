@@ -1,3 +1,5 @@
+ # DreamCloud Nodejs Docker image
+
 docker pull zud0/dreamclouddocker-nodejs
 docker container create  --name nodejs -v /home/asd/nodejs:/data zud0/dreamclouddocker-nodejs
 VAGY
@@ -6,14 +8,14 @@ docker container start nodejs
 docker logs nodejs -f
 
 docker exec -it nodejs /bin/bash
-DEMO: 
+Template1: 
 
-docker exec -it nodejs /bin/bash gitclone https://github.com/ItsMeSudo/Dreamcloud-demo.git
+docker exec -it nodejs /bin/bash gitclone https://github.com/ItsMeSudo/DreamCloud-Template1.git
 docker exec -it nodejs /bin/bash modules-i figlet
 docker exec -it nodejs /bin/bash setservertoken TOKEN
 
-DEMO2: 
+Template2: 
 
-docker exec -it nodejs /bin/bash gitclone https://github.com/ItsMeSudo/Dreamcloud-demo2.git
-docker exec -it nodejs /bin/bash modules-i discord.js dotenv
+docker exec -it nodejs /bin/bash gitclone https://github.com/ItsMeSudo/DreamCloud-Template2.git
+docker exec -it nodejs /bin/bash modules-i discord.js dotenv figlet
 docker exec -it nodejs /bin/bash setservertoken TOKEN
